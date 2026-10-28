@@ -1,3 +1,99 @@
-@use "./variables.scss" as *;
+/* HotBWiki — Dark Fantasy suave
+   Personalizacao sobre ITS Theme / ttrpg-dnd.
+   O seletor especifico prevalece sobre as variaveis do tema.
+*/
+:root:root:root[saved-theme="dark"] {
+  /* Superficies */
+  --note: #20252b;
+  --outer-bar: #191e24;
+  --side-bar: #252c32;
+  --dark-sidebar: #252c32;
+  --bg: #2b343b;
+  --td: #303941;
+  --code-bg: #252d34;
+  --embed-bg: #29323a;
+  --outline: #353f46;
+  --table: #3d474c;
+  --hr: #46514f;
 
-// put your custom CSS here!
+  /* Texto e hierarquia */
+  --text: #d8d5cd;
+  --text-normal: #d8d5cd;
+  --text-dl: #eee8d9;
+  --soft-text: #b8c1ba;
+  --inactive: #9ca9a3;
+  --faint-text: #87958f;
+  --headers: #c9b78d;
+  --h1-color: #c9b78d;
+  --h2-color: #d4bd92;
+  --h3-color: #b7c6b6;
+  --h4-color: #c9b78d;
+  --h5-color: #c9b78d;
+  --h6-color: #c9b78d;
+  --embed-h: #b7c6b6;
+
+  /* Ligacoes e destaques */
+  --accent: #91bba8;
+  --lite-accent: #a7cbb8;
+  --dark-accent: #35483f;
+  --deep-dark-accent: #293831;
+  --accent2: #bfa77c;
+  --accent2-lite: #91bba8;
+  --link-color: #91bba8;
+  --link-color-hover: #c4d9c9;
+  --secondary: #91bba8;
+  --tertiary: #c9b78d;
+  --folder: #a2b9a8;
+  --folder-open: #c9b78d;
+  --graph-lines: #52625c;
+  --graph-fill: #c9b78d;
+  --highlight: rgba(145, 187, 168, 0.20);
+  --hvr: rgba(145, 187, 168, 0.10);
+  --hvr-active: rgba(201, 183, 141, 0.16);
+
+  /* Variaveis Quartz usadas por componentes fora do ITS Theme */
+  --light: #20252b;
+  --lightgray: #303941;
+  --gray: #9ca9a3;
+  --darkgray: #d8d5cd;
+  --dark: #eee8d9;
+  --background-primary: #20252b;
+  --background-secondary: #252c32;
+  --background-secondary-alt: #191e24;
+  --text-accent: #91bba8;
+  --text-accent-hover: #c4d9c9;
+  --interactive-accent: #35483f;
+  --nav-item-color: #d8d5cd;
+  --nav-item-color-active: #eee8d9;
+  --nav-item-background-hover: #35483f;
+}
+
+/* Reduz a saturacao dos cabecalhos, sem mudar a tipografia TTRPG */
+html[saved-theme="dark"] :is(article, .center) :is(h1, h2, h3, h4, h5, h6) {
+  text-shadow: none;
+}
+/* Títulos principais — dourado */
+article h1,
+.page-title {
+  color: #d9ba87;
+}
+
+/* Cabeçalhos de secção — cobre envelhecido */
+article h2 {
+  color: #c58e6b;
+}
+
+/* Subsecções — verde-sálvia */
+article h3,
+article h4 {
+  color: #9db9a7;
+}/* Linha dos títulos principais */
+/* Links internos — sem fundo */
+article a.internal {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}article p,
+article li {
+  color: #d8d5cd;
+}
