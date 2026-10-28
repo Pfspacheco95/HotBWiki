@@ -1,0 +1,3 @@
+A nossa equipa de aventureiros reuniu-se na trilho a caminho do [[Keep]] a convite de [[Antonieta Madrigal]] que ouviu rumores de que, na área de [[Borderlands]] muito se andava a passar e que os responsáveis procuravam por uma equipa de corajosos e hábeis aventureiros para fazer frente ao caos que emergia na região.
+
+Assim, [[Antonieta Madrigal]] reuniu o casal de halflings [[Alfredo Quintela]] e [[Martalee]], e os ex-criminosos [[Lady Applejack]] e [[Capitulino Andrioleta]] para partirem juntos nesta aventura onde nada os tinha preparado para o que viriam a enfrentar.
