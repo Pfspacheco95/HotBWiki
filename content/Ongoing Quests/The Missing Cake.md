@@ -1,0 +1,1 @@
+[[Alice]] saiu para ir buscar uma encomenda de um bolo para a taberna onde trabalha. Devia ter chegado pela manhã, mas suficientemente atrasada para [[Umbrusk]] suspeitar que algo lhe possa ter acontecido.
