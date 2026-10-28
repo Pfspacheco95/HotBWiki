@@ -1,9 +1,10 @@
 /* HotBWiki — Dark Fantasy suave
-   Personalizacao sobre ITS Theme / ttrpg-dnd.
-   O seletor especifico prevalece sobre as variaveis do tema.
+   Personalização do ITS Theme (ttrpg-dnd) para Quartz.
+   Mantém a tipografia original e oferece contraste adequado nos dois modos.
 */
+
+/* PALETA ESCURA */
 :root:root:root[saved-theme="dark"] {
-  /* Superficies */
   --note: #20252b;
   --outer-bar: #191e24;
   --side-bar: #252c32;
@@ -14,25 +15,23 @@
   --embed-bg: #29323a;
   --outline: #353f46;
   --table: #3d474c;
-  --hr: #46514f;
+  --hr: #9db9a7;
 
-  /* Texto e hierarquia */
   --text: #d8d5cd;
   --text-normal: #d8d5cd;
   --text-dl: #eee8d9;
   --soft-text: #b8c1ba;
   --inactive: #9ca9a3;
   --faint-text: #87958f;
-  --headers: #c9b78d;
-  --h1-color: #c9b78d;
-  --h2-color: #d4bd92;
-  --h3-color: #b7c6b6;
-  --h4-color: #c9b78d;
-  --h5-color: #c9b78d;
-  --h6-color: #c9b78d;
-  --embed-h: #b7c6b6;
+  --headers: #d9ba87;
+  --h1-color: #d9ba87;
+  --h2-color: #c58e6b;
+  --h3-color: #9db9a7;
+  --h4-color: #9db9a7;
+  --h5-color: #9db9a7;
+  --h6-color: #9db9a7;
+  --embed-h: #9db9a7;
 
-  /* Ligacoes e destaques */
   --accent: #91bba8;
   --lite-accent: #a7cbb8;
   --dark-accent: #35483f;
@@ -51,7 +50,7 @@
   --hvr: rgba(145, 187, 168, 0.10);
   --hvr-active: rgba(201, 183, 141, 0.16);
 
-  /* Variaveis Quartz usadas por componentes fora do ITS Theme */
+  /* Variáveis de compatibilidade com componentes Quartz */
   --light: #20252b;
   --lightgray: #303941;
   --gray: #9ca9a3;
@@ -68,32 +67,132 @@
   --nav-item-background-hover: #35483f;
 }
 
-/* Reduz a saturacao dos cabecalhos, sem mudar a tipografia TTRPG */
-html[saved-theme="dark"] :is(article, .center) :is(h1, h2, h3, h4, h5, h6) {
-  text-shadow: none;
-}
-/* Títulos principais — dourado */
-article h1,
-.page-title {
-  color: #d9ba87;
+/* PALETA CLARA — equivalente suave, legível, sem perder a identidade */
+:root:root:root[saved-theme="light"] {
+  --note: #f1ede4;
+  --outer-bar: #e5dfd3;
+  --side-bar: #eae4d9;
+  --dark-sidebar: #eae4d9;
+  --bg: #e8e1d5;
+  --td: #e5ded1;
+  --code-bg: #e8e1d5;
+  --embed-bg: #e9e3d8;
+  --outline: #c9c1b3;
+  --table: #c9c1b3;
+  --hr: #527565;
+
+  --text: #383d3a;
+  --text-normal: #383d3a;
+  --text-dl: #292f2b;
+  --soft-text: #545f57;
+  --inactive: #626b64;
+  --faint-text: #69746d;
+  --headers: #8b663d;
+  --h1-color: #8b663d;
+  --h2-color: #a45336;
+  --h3-color: #527565;
+  --h4-color: #527565;
+  --h5-color: #527565;
+  --h6-color: #527565;
+  --embed-h: #527565;
+
+  --accent: #386d60;
+  --lite-accent: #527e70;
+  --dark-accent: #d7e5db;
+  --deep-dark-accent: #c8d8ce;
+  --accent2: #916b49;
+  --accent2-lite: #386d60;
+  --link-color: #386d60;
+  --link-color-hover: #254c43;
+  --secondary: #386d60;
+  --tertiary: #8b663d;
+  --folder: #527565;
+  --folder-open: #8b663d;
+  --graph-lines: #a5b6aa;
+  --graph-fill: #527565;
+  --highlight: rgba(56, 109, 96, 0.14);
+  --hvr: rgba(56, 109, 96, 0.08);
+  --hvr-active: rgba(139, 102, 61, 0.12);
+
+  --light: #f1ede4;
+  --lightgray: #ddd6ca;
+  --gray: #626b64;
+  --darkgray: #383d3a;
+  --dark: #292f2b;
+  --background-primary: #f1ede4;
+  --background-secondary: #eae4d9;
+  --background-secondary-alt: #e5dfd3;
+  --text-accent: #386d60;
+  --text-accent-hover: #254c43;
+  --interactive-accent: #d7e5db;
+  --nav-item-color: #383d3a;
+  --nav-item-color-active: #292f2b;
+  --nav-item-background-hover: #d7e5db;
 }
 
-/* Cabeçalhos de secção — cobre envelhecido */
-article h2 {
-  color: #c58e6b;
+/* Títulos e linhas: uma hierarquia cromática consistente */
+html[saved-theme="dark"] {
+  --hotb-h1: #d9ba87;
+  --hotb-h2: #c58e6b;
+  --hotb-h3: #9db9a7;
+  --hotb-body: #d8d5cd;
+  --hotb-link: #91bba8;
 }
 
-/* Subsecções — verde-sálvia */
-article h3,
-article h4 {
-  color: #9db9a7;
-}/* Linha dos títulos principais */
-/* Links internos — sem fundo */
-article a.internal {
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}article p,
-article li {
-  color: #d8d5cd;
+html[saved-theme="light"] {
+  --hotb-h1: #8b663d;
+  --hotb-h2: #a45336;
+  --hotb-h3: #527565;
+  --hotb-body: #383d3a;
+  --hotb-link: #386d60;
+}
+
+html[saved-theme] {
+  :is(article, .center) :is(h1, h2, h3, h4, h5, h6) {
+    text-shadow: none;
+  }
+
+  article h1 {
+    color: var(--hotb-h1) !important;
+    border-bottom-color: var(--hotb-h1) !important;
+  }
+
+  article h2 {
+    color: var(--hotb-h2) !important;
+    border-bottom-color: var(--hotb-h2) !important;
+  }
+
+  article h3,
+  article h4 {
+    color: var(--hotb-h3) !important;
+    border-bottom-color: var(--hotb-h3) !important;
+  }
+
+  article p,
+  article li {
+    color: var(--hotb-body);
+  }
+
+  /* Ligações entre notas: texto colorido, sem fundo */
+  article a.internal {
+    color: var(--hotb-link) !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Separadores inseridos no Obsidian com --- */
+  article hr {
+    border-color: var(--hotb-h3) !important;
+    border-top-color: var(--hotb-h3) !important;
+    background-color: var(--hotb-h3) !important;
+  }
+
+  /* Título da wiki na coluna esquerda */
+  .page-title a {
+    color: var(--hotb-h1) !important;
+    font-size: 1.5rem !important;
+    line-height: 1.15 !important;
+    overflow-wrap: normal;
+  }
 }
