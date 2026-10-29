@@ -11,7 +11,7 @@ O Keep na região de [[Borderlands]] é o último bastião de defesa na região 
 6 - [[Trader's Shop]]
 7 - [[Bank]]
 8 - [[Traveler's Inn]]
-9 - [[Drunken Dragon|Tavern]]
+9 - [[Drunken Dragon Tavern|Tavern]]
 10 - [[Guild House]]
 11 - [[Temple]]
 12 - [[Inner Gatehouse]]

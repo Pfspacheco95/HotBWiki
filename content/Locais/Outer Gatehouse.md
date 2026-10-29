@@ -1,0 +1,1 @@
+A porta de entrada para o [[Keep]], os guardas [[Bartho]] e [[Gala]] vigiam e vetam a entrada de todos os visitantes do Keep.
